@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Palindrome_num{
+    public static void main(String[] args) {
+        int num;
+        Scanner r = new Scanner(System.in);
+        num = r.nextInt();
+        palindrome(num);
+
+    }
+    public static void palindrome(int a){
+        int b,rev = 0,rem;
+        b = a;
+        while (a>0) {
+            rem = a%10;
+            rev = rev*10 + rem;
+            a = a / 10;
+        }
+        if (rev == b) {
+            System.out.print("palindrome");
+        } else {
+            System.out.print("not a palindrome");
+        }
+    }
+}
+
