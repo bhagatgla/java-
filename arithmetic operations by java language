@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class arithmetic_operations {
+    public static void main(String[]args){
+        int a,b;
+        Scanner ref =  new Scanner(System.in);
+        a = ref.nextInt();
+        b = ref.nextInt();
+        operations(a,b);
+    }
+    public static void operations(int x,int y){
+        System.out.println("addition" + " "+ (x+y));
+        System.out.println("subtraction" + " "+ (x-y));
+        System.out.println("product" + " "+ (x*y));
+        System.out.println("division" + " "+ (x/y));
+        System.out.println("modulus" + " "+ (x%y));
+    }
+}
